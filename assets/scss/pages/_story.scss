@@ -1,0 +1,38 @@
+.header{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 152px 0;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .header{
+        background-image: url(https://github.com/icephy/2026_webCodingClass-W3/blob/master/img/hero-sm.png?raw=true);
+        padding: 87px 0;
+    }
+
+}
+
+
+/* .intro img{
+    width: 1076px;
+    margin-right: -110px;
+    margin-left: -110px;
+} */
+
+.list-disc{
+    list-style-type: disc;
+    padding-left: 24px;
+}
+
+.list-line{
+    border-left: 3px solid var(--neutral-300);
+    padding-left: 12px;
+}
+
+.bi{
+    padding-right: 8px;
+    vertical-align: bottom;
+}

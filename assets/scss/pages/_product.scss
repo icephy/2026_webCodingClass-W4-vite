@@ -1,0 +1,43 @@
+/* 產品圖片 */
+
+.product-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.product-col{
+    width: calc(100% / 12 * 6);
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+.product-color{
+    width: 64px;
+    text-align: center;
+    color: $neutral-600;
+}
+
+.btn-product-size{
+    border: 1px solid $neutral-300;
+    width: 160px;
+}
+
+.btn-product-size.active, .btn-product-size:hover{
+    border: 1px solid $neutral-900;
+}
+
+.product-action{
+    display: flex;
+    gap: 8px;
+}
+
+.product-action .btn{
+    width: 50%;
+}
+
+.product-action .bi{
+    padding-right: 8px;
+}

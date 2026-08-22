@@ -1,0 +1,18 @@
+.category .active{
+    color: $primary-400;
+}
+
+.page-item .btn{
+    padding: 8px 15px;
+    border-radius: 0px;
+    font-weight: 400;
+}
+
+.page-item .active{
+    background-color: $primary-300;
+    font-weight: 500;
+}
+
+.product-action .bi{
+    padding-right: 8px;
+}

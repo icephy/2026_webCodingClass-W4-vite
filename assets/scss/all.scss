@@ -1,0 +1,18 @@
+@import './helper/variables';
+@import './helper/utils';
+
+// Q：為什麼助教這邊不帶上副檔名.scss，而且我的路徑寫法和助教不同，寫助教的寫法會一直出現錯誤
+@import './base/reset';
+@import './base/base';
+
+@import './component/breadcrumb';
+@import './component/button';
+
+@import './layout/header';
+@import './layout/footer';
+
+
+@import './pages/index';
+@import './pages/products';
+@import './pages/product';
+@import './pages/story';

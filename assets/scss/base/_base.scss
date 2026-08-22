@@ -1,0 +1,26 @@
+/* 標籤基本樣式 */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-style: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: $neutral-900;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+a{
+    color: $neutral-900;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}

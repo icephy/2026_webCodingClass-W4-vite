@@ -1,0 +1,160 @@
+.product{
+  position: relative;
+  .tag{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 8px 12px;
+    background-color: $primary-100;
+    font-size: 14px;
+    color: $primary-400;
+  }
+}
+
+// Q:編譯成css後，選擇器是？
+// .product .tag
+// .product.tag
+
+// 重要：設定 overflow 的產品圖片
+@media (max-width: 767px) {
+  .product-md-row{
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .product-md-col{
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.banner{
+  text-align: center;
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+}
+
+// Q:背景圖的樣式，通常會需要加上那些設定?
+// 只要引入背景圖即可 +1
+// 要調整背景圖尺寸、位置
+// 正解：要調整背景圖尺寸、位置，以及是否重複+3
+
+.star-img{
+  position: absolute;
+  width: 48px;
+  top: 68px;
+  left: 397px;
+  // 計算裝飾圖與中心線的距離
+}
+
+.sparkle-img{
+  position: absolute;
+  width: 76px;
+  bottom: 132px;
+  right: calc(50% - 357px);
+}
+
+@media (max-width: 767px) {
+  .banner{
+    padding: 64px 0;
+    background-image: url(/assets/images/banner-co-branded-sm.png);
+    overflow: hidden;
+    // Q：為什麼這裡可以用 overflow: hidden; 來處理出 x 軸
+  }
+  .star-img{
+    top: 32px;
+    left: -20px;
+  }
+  .sparkle-img{
+    bottom: 104px;
+    right: -28px;
+  }
+
+}
+
+.product-cover{
+  position: relative;
+  .product-cover-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(black, 0.4);
+    color: $neutral-0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.inspiration-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.inspiration-col-4{
+  width: calc(100% / 12 * 4);
+  padding: 4px;
+}
+
+.inspiration-col-6{
+  width: calc(100% / 12 * 6);
+  padding: 4px;
+}
+
+.inspiration-col-12{
+  width: 100%;
+  padding: 4px;
+}
+
+@media (max-width: 767px) {
+  .inspiration-row{
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+    img{
+      min-width: 300px;
+    }
+  }
+
+  .inspiration-col-4,
+  .inspiration-col-6,
+  .inspiration-col-12{
+    width: unset;
+    padding: 0 8px;
+  }
+}
+
+
+.nav-link .active{
+  background-color: $primary-200;
+}
+
+.nav-link.active:hover{
+  background-color: $primary-200;
+}
+// Q：為何 hover 沒有生效
+
+.hero{
+  background-image: url(/assets/images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 288px 0;
+}
+
+@media (max-width: 576px) {
+  .hero{
+    background-image: url(/assets/images/banner-sm.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 155px 0;
+  }
+}
